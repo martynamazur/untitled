@@ -14,8 +14,8 @@ app.use(bodyParser.json());
  * Docelowo: Stripe Prices / Subscriptions
  */
 const PLANS = {
-    basic_monthly: { amount: 19, currency: 'pln' },
-    pro_monthly: { amount: 3999, currency: 'pln' },
+    basic_monthly: { amount: 19.00, currency: 'pln' },
+    pro_monthly: { amount: 3999.00, currency: 'pln' },
 };
 
 app.post('/create-payment-intent', async (req, res) => {
